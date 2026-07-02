@@ -28,13 +28,13 @@ function MainPage() {
 
       <Separator />
 
-      <FadeIn delay={200}>
+      <FadeIn delay={100}>
         <Statistics />
       </FadeIn>
 
       <Separator />
 
-      <FadeIn delay={300}>
+      <FadeIn delay={100}>
         <Timeline />
       </FadeIn>
     </div>

@@ -6,10 +6,22 @@ export default function Title({ text, id }) {
     const [lineWidth, setLineWidth] = useState(0);
 
     useEffect(() => {
-        if (titleRef.current) {
-            const w = titleRef.current.offsetWidth;
-            setLineWidth(w * 3); // Set the line width to 3 times the title width
+        if (!titleRef.current) return;
+
+        const w = titleRef.current.offsetWidth;
+
+        // Responsive multiplier based on screen width
+        const screenWidth = window.innerWidth;
+
+        let multiplier = 3; // Desktop
+
+        if (screenWidth < 700) {
+            multiplier = 2; // Mobile
+        } else if (screenWidth < 1024) {
+            multiplier = 2.5; // Tablet
         }
+
+        setLineWidth(w * multiplier);
     }, [text]);
 
     return (

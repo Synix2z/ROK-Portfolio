@@ -18,40 +18,34 @@
     color: var(--color-text-secondary);
     text-decoration: none;
     margin-right: auto;
+    transition: transform 0.2s ease;
 }
 
 .logo:hover {
     transform: scale(1.1);
-    transition: transform 0.2s ease;
 }
 
-/* Navigation styles */
 .nav {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-.nav a,
 .nav button {
     font-family: var(--font-text-primary);
     font-size: var(--font-size-text-primary);
     color: var(--color-text-primary);
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 4px;
     background: none;
     border: none;
     cursor: pointer;
+    position: relative;
+    padding-bottom: 4px;
 }
 
-.nav a:hover,
 .nav button:hover {
     color: var(--color-text-secondary);
 }
 
-/* Underline effect for navigation links */
-.nav a::after,
 .nav button::after {
     content: "";
     position: absolute;
@@ -66,7 +60,69 @@
     transition: transform 0.25s ease;
 }
 
-.nav a:hover::after,
 .nav button:hover::after {
     transform: scaleX(1);
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .nav {
+        gap: 24px;
+        align-items: center;
+    }
+
+    .nav button {
+        font-size: 16px;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 699px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .hamburger span {
+        width: 28px;
+        height: 3px;
+        background: var(--color-text-secondary);
+        border-radius: 2px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background: var(--color-primary);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav button {
+        font-size: 18px;
+    }
 }

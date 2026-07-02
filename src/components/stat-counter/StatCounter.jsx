@@ -29,11 +29,15 @@ export default function StatCounter({ value, label, icon }) {
     return (
         <div ref={ref} className={style.counter}>
             <div className={style.valueWrapper}>
-                {icon && <span className={style.icon}>{icon}</span>}
+                
+                {icon}
+
                 <div className={style.valueContent}>
-                    {/* Format number with spaces as thousand separators (e.g. 1 690 804 610) */}
-                    <span className={style.value}>{displayedValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}</span>
-                    {label && <span className={style.label}>{label}</span>}
+                    <span className={style.value}>
+                        {/* Format number with spaces as thousand separators (e.g. 1 690 804 610) */}
+                        {displayedValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}
+                    </span>
+                    <span className={style.label}>{label}</span>
                 </div>
             </div>
         </div>

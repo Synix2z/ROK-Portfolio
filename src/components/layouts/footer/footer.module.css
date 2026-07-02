@@ -8,30 +8,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 120px;
     padding: 0 100px;
 }
 
-/* Left column */
-.informations {
+.informations,
+.footerLinks {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 8px;
-}
-
-.id {
-    color: var(--color-text-secondary);
-    font-family: var(--font-text-primary);
-    font-size: var(--font-size-text-primary);
 }
 
 .footerNav {
     display: flex;
     flex-direction: column;
+    gap: 6px;
     line-height: 2;
-    gap: 4px;
 }
 
 .footerLink {
@@ -42,11 +34,9 @@
 }
 
 .footerLink:hover {
-    opacity: 1;
     color: var(--color-text-secondary);
 }
 
-/* Center */
 .footerText {
     flex: 1;
     color: var(--color-text-primary);
@@ -55,22 +45,79 @@
     text-align: center;
 }
 
-/* Right column */
-.footerLinks {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 40px;
+.id {
+    color: var(--color-text-secondary);
+    font-family: var(--font-text-primary);
+    font-size: var(--font-size-text-primary);
 }
 
 .githubIcon {
     width: 40px;
     height: 40px;
     filter: brightness(0) invert(1);
-    transition: filter 0.25s ease;
+    transition: filter .25s ease;
 }
 
 .githubIcon:hover {
     filter: brightness(0) saturate(100%) invert(63%) sepia(50%) saturate(500%) hue-rotate(210deg);
+}
+
+@media (max-width: 699px) {
+    .footerContent {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .informations,
+    .footerLinks {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .footerNav {
+        gap: 10px;
+    }
+
+    .footerLink,
+    .footerText,
+    .id {
+        font-size: 14px;
+    }
+
+    .githubIcon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .footerContent {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .informations,
+    .footerLinks {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footerNav {
+        gap: 12px;
+    }
+
+    .footerLink,
+    .footerText,
+    .id {
+        font-size: 16px;
+    }
+
+    .githubIcon {
+        width: 36px;
+        height: 36px;
+    }
 }

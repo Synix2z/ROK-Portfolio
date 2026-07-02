@@ -22,20 +22,44 @@ export default function Statistics() {
 
                 {/* Ligne gauche */}
                 <div className={`${styles.galleryRow} ${styles.left}`}>
-                    <StatCounter value={57000000} label="Approximate Power" icon={<Zap size={48} />} />
-                    <StatCounter value={1671000000} label="Total Kills" icon={<Sword size={48} />} />
+                    <StatCounter
+                        value={57000000}
+                        label="Approximate Power"
+                        icon={<Zap className={styles.icon} size={48} />}
+                    />
+                    <StatCounter
+                        value={1671000000}
+                        label="Total Kills"
+                        icon={<Sword className={styles.icon} size={48} />}
+                    />
                 </div>
 
                 {/* Ligne droite */}
                 <div className={`${styles.galleryRow} ${styles.right}`}>
-                    <StatCounter value={7272375} label="Deaths" icon={<Skull size={48} />} />
-                    <StatCounter value={0} label="Merit" icon={<Medal size={48} />} />
+                    <StatCounter
+                        value={7272375}
+                        label="Deaths"
+                        icon={<Skull className={styles.icon} size={48} />}
+                    />
+                    <StatCounter
+                        value={0}
+                        label="Merit"
+                        icon={<Medal className={styles.icon} size={48} />}
+                    />
                 </div>
 
                 {/* Ligne gauche */}
                 <div className={`${styles.galleryRow} ${styles.left}`}>
-                    <StatCounter value={51947} label="Alliance Helps" icon={<HandHeart size={48} />} />
-                    <StatCounter value={1230} label="Approximate Days Played" icon={<CalendarDays size={48} />} />
+                    <StatCounter
+                        value={51947}
+                        label="Alliance Helps"
+                        icon={<HandHeart className={styles.icon} size={48} />}
+                    />
+                    <StatCounter
+                        value={1230}
+                        label="Approximate Days Played"
+                        icon={<CalendarDays className={styles.icon} size={48} />}
+                    />
                 </div>
 
             </div>

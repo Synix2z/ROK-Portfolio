@@ -1,7 +1,11 @@
 .page {
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding: 60px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 .title {
@@ -10,10 +14,13 @@
     font-weight: 700;
     color: var(--color-text-primary);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .section {
-    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .sectionTitle {
@@ -32,10 +39,51 @@
     color: var(--color-text-primary);
     opacity: 0.8;
     line-height: 1.5;
-    margin-bottom: 12px;
 }
 
 .highlight {
     color: var(--color-text-secondary);
     font-weight: 600;
+}
+
+@media (max-width: 699px) {
+    .page {
+        width: 80%;
+        max-width: none;
+        padding: 40px 0;
+        gap: 32px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .sectionTitle {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .page {
+        width: 80%;
+        max-width: none;
+        padding: 40px 0;
+        gap: 32px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .sectionTitle {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
 }

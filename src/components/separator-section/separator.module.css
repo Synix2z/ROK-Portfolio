@@ -5,3 +5,15 @@
   border-radius: 2px;
   margin: 40px auto 40px auto;
 }
+
+@media (max-width: 699px) {
+  .separator {
+    width: 90%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .separator {
+    width: 90%;
+  }
+}

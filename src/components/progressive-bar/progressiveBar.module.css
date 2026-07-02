@@ -26,3 +26,33 @@
     color: var(--color-text-primary);
     min-width: 40px;
 }
+
+@media (max-width: 699px) {
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .progressiveBar {
+        height: 8px;
+    }
+
+    .percentage {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .progressiveBar {
+        height: 12px;
+    }
+
+    .percentage {
+        font-size: 16px;
+    }
+}

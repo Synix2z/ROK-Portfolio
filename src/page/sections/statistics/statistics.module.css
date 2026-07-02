@@ -1,8 +1,6 @@
-/* Statistics Section */
 .statisticsContent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 40px;
     width: 100%;
@@ -20,19 +18,11 @@
     width: 800px;
 }
 
-.vipBarWrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-/* Galerie */
 .gallery {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 80px 0;
     width: 100%;
 }
 
@@ -50,4 +40,75 @@
 .galleryRow.right {
     align-items: flex-end;
     padding-right: 10%;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+@media (max-width: 699px) {
+    .statisticsContent > div {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .vipTitle {
+        font-size: 18px;
+    }
+
+    .gallery {
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .galleryRow {
+        gap: 30px;
+    }
+
+    .galleryRow.left,
+    .galleryRow.right {
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .statisticsContent > div {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .vipTitle {
+        font-size: 20px;
+    }
+
+    .gallery {
+        gap: 60px;
+        margin-top: 60px;
+    }
+
+    .galleryRow {
+        gap: 32px;
+    }
+
+    .galleryRow.left,
+    .galleryRow.right {
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
 }
