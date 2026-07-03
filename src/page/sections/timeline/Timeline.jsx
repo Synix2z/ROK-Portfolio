@@ -70,8 +70,8 @@ export default function Timeline() {
             stats: { kills: "No data", deaths: "No data" },
         },
         {
-            dateStart: "13 March 2025",
-            dateEnd: "4 May 2025",
+            dateStart: "13 March 2026",
+            dateEnd: "4 May 2026",
             title: "KvK Soc",
             kd: "2159",
             stats: { kills: "No data", deaths: "No data" },
