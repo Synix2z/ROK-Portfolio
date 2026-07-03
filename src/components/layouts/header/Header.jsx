@@ -37,8 +37,8 @@ export default function Header() {
         <button onClick={() => scrollToSection("current-objectives")}>Current Objectives</button>
         <button onClick={() => scrollToSection("statistics-title")}>Statistics</button>
         <button onClick={() => scrollToSection("timeline-title")}>KD & KvK Timeline</button>
-        {/* Future new page */}
-        <button onClick={() => scrollToSection("tools-title")}>Tools</button>
+        
+        <button onClick={() => navigate("/tools")}>Tools</button>
       </nav>
     </header>
   );
