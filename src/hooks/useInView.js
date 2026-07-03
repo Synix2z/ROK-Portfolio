@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 /* Detects when an element becomes visible in the viewport */
-export default function useInView(threshold = 0.2) {
+export default function useInView(threshold = 0.1) {
     // Reference to the DOM element we want to observe
     const ref = useRef(null);
 

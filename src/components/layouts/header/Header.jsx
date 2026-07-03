@@ -34,6 +34,7 @@ export default function Header() {
       <nav className={`${styles.nav} ${open ? styles.open : ""}`}>
         <button onClick={() => scrollToSection("about-title")}>About</button>
         <button onClick={() => scrollToSection("commanders-title")}>Commanders</button>
+        <button onClick={() => scrollToSection("current-objectives")}>Current Objectives</button>
         <button onClick={() => scrollToSection("statistics-title")}>Statistics</button>
         <button onClick={() => scrollToSection("timeline-title")}>KD & KvK Timeline</button>
       </nav>

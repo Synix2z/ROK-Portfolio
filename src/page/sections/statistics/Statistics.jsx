@@ -5,6 +5,7 @@ import { Zap, Sword, Skull, Medal, HandHeart, CalendarDays } from "lucide-react"
 import Title from "../../../components/title-section/Title";
 import ProgressiveBar from "../../../components/progressive-bar/ProgressiveBar";
 import StatCounter from "../../../components/stat-counter/StatCounter";
+import ResourceCard from "../../../components/ressource-card/ResourceCard";
 
 export default function Statistics() {
     return (
@@ -62,6 +63,29 @@ export default function Statistics() {
                     />
                 </div>
 
+                <div className={styles.resourcesSection}>
+                    <div className={styles.resourcesTitle}>Last Update :</div>
+                    <div className={styles.resourcesRow}>
+                        <ResourceCard
+                            type="resources"
+                            stats={{
+                                wood: "5.2B",
+                                food: "4.9B",
+                                stone: "3.4B",
+                                gold: "1.8B"
+                            }}
+                        />
+                        <ResourceCard
+                            type="accelerators"
+                            stats={{
+                                construction: "19d 12h",
+                                healing: "19d 17h",
+                                training: "1218d 7h",
+                                universal: "1227d 10h"
+                            }}
+                        />
+                    </div>
+                </div>
             </div>
         </>
     );

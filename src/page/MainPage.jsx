@@ -8,6 +8,7 @@ import Commanders from './sections/commanders/Commanders'
 import Statistics from './sections/statistics/Statistics'
 import FadeIn from '../components/fade-in/FadeIn'
 import Timeline from './sections/timeline/Timeline'
+import CurrentObjectives from './sections/current-objectives/CurrentObjectives'
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import styles from './mainPage.module.css'
@@ -25,6 +26,12 @@ function MainPage() {
       <FadeIn delay={100}>
         <Commanders />
       </FadeIn>
+
+      <Separator />
+
+      <FadeIn delay={100}>
+        <CurrentObjectives />
+      </FadeIn> 
 
       <Separator />
 

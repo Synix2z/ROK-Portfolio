@@ -49,6 +49,27 @@
     margin: auto 0;
 }
 
+.resourcesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.resourcesTitle {
+    font-family: var(--font-text-primary);
+    font-size: var(--font-size-text-title);
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+}
+
+.resourcesRow {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
 @media (max-width: 699px) {
     .statisticsContent > div {
         width: 100%;
@@ -78,6 +99,19 @@
     .icon {
         width: 28px;
         height: 28px;
+    }
+
+    .resourcesSection {
+        width: 80%;
+    }
+
+    .resourcesRow {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .resourcesTitle {
+        font-size: 18px;
     }
 }
 
@@ -110,5 +144,18 @@
     .icon {
         width: 32px;
         height: 32px;
+    }
+
+    .resourcesSection {
+        width: 80%;
+    }
+
+    .resourcesRow {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .resourcesTitle {
+        font-size: 20px;
     }
 }
