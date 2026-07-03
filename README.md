@@ -27,27 +27,18 @@ src/
 │   │   ├── header/
 │   │   └── footer/
 │   │
-│   ├── commander-grid/
-│   ├── inscription/
-│   ├── fade-in/
-│   ├── stat-counter/
-│   └── title-section/
+│   └── ...
 │
 ├── hooks/
 │
 ├── images/
-│   ├── commanders/
-│   ├── stuff/
-│   └── stats/
 │
 ├── page/
 │   ├── MainPage.jsx
-│   ├── mainPage.module.css
+│   ├── legal-mentions/
+│   ├── tech-stack/
+│   ├── tools/
 │   └── sections/
-│       ├── about/
-│       ├── commanders/
-│       ├── statistics/
-│       └── timeline/
 │
 ├── App.jsx
 ├── main.jsx
