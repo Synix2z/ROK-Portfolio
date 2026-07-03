@@ -1,0 +1,76 @@
+.troopsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.title {
+    font-family: var(--font-text-primary);
+    font-size: var(--font-size-text-title);
+    color: var(--color-text-secondary);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.troopsRow {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.troopItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.troopImage {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.troopImage:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.troopCount {
+    font-family: var(--font-text-primary);
+    font-size: 18px;
+    color: var(--color-text-primary);
+}
+
+@media (max-width: 699px) {
+    .troopsRow {
+        gap: 30px;
+    }
+
+    .troopImage {
+        width: 60px;
+        height: 60px;
+    }
+
+    .troopCount {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .troopsRow {
+        gap: 40px;
+    }
+
+    .troopImage {
+        width: 75px;
+        height: 75px;
+    }
+
+    .troopCount {
+        font-size: 16px;
+    }
+}

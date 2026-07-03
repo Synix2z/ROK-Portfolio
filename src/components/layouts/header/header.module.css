@@ -27,8 +27,12 @@
 
 .nav {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
+}
+
+.nav button:last-child {
+    margin-left: 50px;
 }
 
 .nav button {
@@ -64,23 +68,57 @@
     transform: scaleX(1);
 }
 
+.hamburger {
+    display: none;
+}
+
 @media (min-width: 700px) and (max-width: 1023px) {
     .logo {
         font-size: 30px;
     }
 
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .hamburger span {
+        width: 32px;
+        height: 3px;
+        background: var(--color-text-secondary);
+        border-radius: 2px;
+    }
+
     .nav {
-        gap: 24px;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background: var(--color-primary);
+        width: 100%;
+        flex-direction: column;
         align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav.open {
+        display: flex;
     }
 
     .nav button {
         font-size: 16px;
     }
-}
 
-.hamburger {
-    display: none;
+    .nav button:last-child {
+        margin-top: 10px;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 699px) {
@@ -124,5 +162,10 @@
 
     .nav button {
         font-size: 18px;
+    }
+
+    .nav button:last-child {
+        margin-top: 12px;
+        margin-left: 0;
     }
 }

@@ -5,6 +5,7 @@ import { Zap, Sword, Skull, Medal, HandHeart, CalendarDays } from "lucide-react"
 import Title from "../../../components/title-section/Title";
 import ProgressiveBar from "../../../components/progressive-bar/ProgressiveBar";
 import StatCounter from "../../../components/stat-counter/StatCounter";
+import Troops from "../../../components/troops/Troops";
 import ResourceCard from "../../../components/ressource-card/ResourceCard";
 
 export default function Statistics() {
@@ -62,6 +63,8 @@ export default function Statistics() {
                         icon={<CalendarDays className={styles.icon} size={48} />}
                     />
                 </div>
+
+                <Troops /> 
 
                 <div className={styles.resourcesSection}>
                     <div className={styles.resourcesTitle}>Last Update :</div>

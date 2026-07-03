@@ -74,7 +74,7 @@ export default function Timeline() {
             dateEnd: "4 May 2026",
             title: "KvK Soc",
             kd: "2159",
-            stats: { kills: "No data", deaths: "No data" },
+            stats: { kills: "~ 53M", deaths: "~96k" },
             comment: "My team wasn’t very strong and I took a two-month break, so I didn’t take part much in this KvK.",
         },
     ];
