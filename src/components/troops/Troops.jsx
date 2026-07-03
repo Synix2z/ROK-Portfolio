@@ -18,7 +18,7 @@ export default function Troops() {
 
     return (
         <div className={styles.troopsSection}>
-            <div className={styles.title}>Troops</div>
+            <div className={styles.title}>Troops :</div>
 
             <div className={styles.troopsRow}>
                 {troops.map((t, i) => (
