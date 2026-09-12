@@ -7,6 +7,7 @@ const objectives = [
     "Refine and upgrade my first gear set",
     "Improve attirails",
     "Update all farm accounts to CH 24",
+    "Get more accelerators to target Zenith skin"
 ];
 
 export default function CurrentObjectives() {

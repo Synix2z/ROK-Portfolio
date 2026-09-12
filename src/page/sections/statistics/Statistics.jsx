@@ -30,7 +30,7 @@ export default function Statistics() {
                         icon={<Zap className={styles.icon} size={48} />}
                     />
                     <StatCounter
-                        value={1671000000}
+                        value={1751000000}
                         label="Total Kills"
                         icon={<Sword className={styles.icon} size={48} />}
                     />
@@ -39,12 +39,12 @@ export default function Statistics() {
                 {/* Ligne droite */}
                 <div className={`${styles.galleryRow} ${styles.right}`}>
                     <StatCounter
-                        value={7272375}
+                        value={7500000}
                         label="Deaths"
                         icon={<Skull className={styles.icon} size={48} />}
                     />
                     <StatCounter
-                        value={0}
+                        value={1165700}
                         label="Merit"
                         icon={<Medal className={styles.icon} size={48} />}
                     />
@@ -53,12 +53,12 @@ export default function Statistics() {
                 {/* Ligne gauche */}
                 <div className={`${styles.galleryRow} ${styles.left}`}>
                     <StatCounter
-                        value={51947}
+                        value={54110}
                         label="Alliance Helps"
                         icon={<HandHeart className={styles.icon} size={48} />}
                     />
                     <StatCounter
-                        value={1230}
+                        value={1300}
                         label="Approximate Days Played"
                         icon={<CalendarDays className={styles.icon} size={48} />}
                     />
@@ -72,19 +72,19 @@ export default function Statistics() {
                         <ResourceCard
                             type="resources"
                             stats={{
-                                wood: "5.2B",
-                                food: "4.9B",
-                                stone: "3.4B",
-                                gold: "1.8B"
+                                wood: "5.1B",
+                                food: "4.8B",
+                                stone: "3.7B",
+                                gold: "1.9B"
                             }}
                         />
                         <ResourceCard
                             type="accelerators"
                             stats={{
-                                construction: "19d 12h",
-                                healing: "19d 17h",
-                                training: "1218d 7h",
-                                universal: "1227d 10h"
+                                construction: "20d 17h",
+                                healing: "8d 17h",
+                                training: "1266d 14h",
+                                universal: "1478d 10h"
                             }}
                         />
                     </div>
