@@ -22,12 +22,6 @@ export default function Footer() {
                 {/* Right — Contact */}
                 <div className={styles.footerLinks}>
                     <p className={styles.id}>ID : 131046134</p>
-                    <Link to="https://github.com/Synix2z" target="_blank" rel="noopener noreferrer">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                            className={styles.githubIcon}
-                        />
-                    </Link>
                 </div>
 
             </div>
