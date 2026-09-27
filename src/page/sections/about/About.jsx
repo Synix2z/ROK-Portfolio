@@ -2,6 +2,7 @@ import styles from "./about.module.css";
 
 import Title from "../../../components/title-section/Title";
 import profileImage from "../../../images/profile.jpg";
+import { CircleAlert } from "lucide-react";
 
 export default function About() {
     return (
@@ -64,6 +65,22 @@ export default function About() {
                     <p>
                         If you want to talk with me in game, feel free to send me a message and adding me with this ID : <span style={{ color: "var(--color-text-secondary)" }}> 131046134</span> !
                     </p>
+
+                    <br />
+                    
+                    <div className={styles.disclaimer}>
+                        <div className={styles.disclaimerIcon}>
+                            <CircleAlert size={24} /> 
+                        </div>
+                        
+                        <p>
+                            Some information, such as gear, equipment, or the number of resources and speed-ups, may not be up to date. So if you need anything, please ask me directly.
+                        </p>
+
+                        <p>
+                            Last update: 27/09/26 
+                        </p>
+                    </div>
                 </div>
             </div>
         </>

@@ -22,6 +22,17 @@
     line-height: 1.5;
 }
 
+.disclaimerIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.disclaimer {
+    color: var(--color-attention);
+}
+
 @media (max-width: 699px) {
     .profileImage {
         width: 200px;

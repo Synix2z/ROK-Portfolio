@@ -10,9 +10,9 @@ import T5Inf from "../../images/troops/T5_Inf.png";
 export default function Troops() {
     const troops = [
         { img: T5Inf, count: "300k" },
-        { img: T4Inf, count: "652k" },
-        { img: T4Cav, count: "610k" },
-        { img: T4Archer, count: "600k" },
+        { img: T4Inf, count: "775k" },
+        { img: T4Cav, count: "444k" },
+        { img: T4Archer, count: "700k" },
         { img: T1Belier, count: "300k" },
     ];
 

@@ -16,7 +16,7 @@ export default function Statistics() {
             <div className={styles.statisticsContent}>
                 <div className={styles.vipTitle}>Progression to reach VIP 16</div>
                 <div className={styles.vipBarWrapper}>
-                    <ProgressiveBar current={1196000} max={1500000} />
+                    <ProgressiveBar current={1363980} max={1500000} />
                 </div>
             </div>
 
@@ -30,7 +30,7 @@ export default function Statistics() {
                         icon={<Zap className={styles.icon} size={48} />}
                     />
                     <StatCounter
-                        value={1751000000}
+                        value={1844746000}
                         label="Total Kills"
                         icon={<Sword className={styles.icon} size={48} />}
                     />
@@ -39,13 +39,13 @@ export default function Statistics() {
                 {/* Ligne droite */}
                 <div className={`${styles.galleryRow} ${styles.right}`}>
                     <StatCounter
-                        value={7500000}
+                        value={7600000}
                         label="Deaths"
                         icon={<Skull className={styles.icon} size={48} />}
                     />
                     <StatCounter
                         value={1165700}
-                        label="Merit"
+                        label="Highest Acclaim"
                         icon={<Medal className={styles.icon} size={48} />}
                     />
                 </div>
@@ -53,12 +53,12 @@ export default function Statistics() {
                 {/* Ligne gauche */}
                 <div className={`${styles.galleryRow} ${styles.left}`}>
                     <StatCounter
-                        value={54110}
+                        value={54424}
                         label="Alliance Helps"
                         icon={<HandHeart className={styles.icon} size={48} />}
                     />
                     <StatCounter
-                        value={1300}
+                        value={1314}
                         label="Approximate Days Played"
                         icon={<CalendarDays className={styles.icon} size={48} />}
                     />
@@ -72,19 +72,19 @@ export default function Statistics() {
                         <ResourceCard
                             type="resources"
                             stats={{
-                                wood: "5.1B",
-                                food: "4.8B",
-                                stone: "3.7B",
-                                gold: "1.9B"
+                                wood: "4.8B",
+                                food: "4.6B",
+                                stone: "3.9B",
+                                gold: "2B"
                             }}
                         />
                         <ResourceCard
                             type="accelerators"
                             stats={{
-                                construction: "20d 17h",
-                                healing: "8d 17h",
-                                training: "1266d 14h",
-                                universal: "1478d 10h"
+                                construction: "5d 13h",
+                                healing: "0d",
+                                training: "1368d 23h",
+                                universal: "1497d 10h"
                             }}
                         />
                     </div>

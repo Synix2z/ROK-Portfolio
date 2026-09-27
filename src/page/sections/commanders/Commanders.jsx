@@ -16,14 +16,17 @@ import casqueImage from "../../../images/stuff/Casque.png";
 import capeImage from "../../../images/stuff/Cape.png";
 import capeRaffiImage from "../../../images/stuff/Cape_Raffi.png";
 import bouclierImage from "../../../images/stuff/Bouclier.png";
+import bouclierRaffiImage from "../../../images/stuff/Bouclier_Raffi_Retouche.png";     
 import gantImage from "../../../images/stuff/Gant.png";
 import pantalonImage from "../../../images/stuff/Pantalon.png";
+import pantalonRaffiImage from "../../../images/stuff/Pantalon_Raffi_Retouche.png";
 import bottesImage from "../../../images/stuff/Bottes.png";
 import bottesRaffiImage from "../../../images/stuff/Bottes_Raffi.png";
 
 /* Jewellery gears */
 import grandeGloireImage from "../../../images/stuff/Grande_Gloire.png";
 import anneauRaffiImage from "../../../images/stuff/Anneau_Raffi.png";
+import anneauRaffi2Image from "../../../images/stuff/Anneau_Raffi2_Retouche.png";
 import corneImage from "../../../images/stuff/Corne.png";
 import dagueImage from "../../../images/stuff/Dague.png";
 
@@ -31,7 +34,7 @@ import Archer_Stats from "../../../images/stats/Archer_Stats.png";
 import Barbarian_Stats from "../../../images/stats/Barbarian_Stats.png";
 import Inf_Stats from "../../../images/stats/Inf_Stats.png";
 
-import { Sword, BowArrow, Axe } from "lucide-react";
+import { Sword, BowArrow, Footprints } from "lucide-react";
 
 export default function Commanders() {
     return (
@@ -50,18 +53,18 @@ export default function Commanders() {
                     {/* Commanders grid section */}
                     <CommandersGrid images={[
                         casqueImage,
-                        bouclierImage,
+                        bouclierRaffiImage,
                         capeRaffiImage,
                         gantImage,
                         grandeGloireImage,
-                        pantalonImage,
-                        anneauRaffiImage,
+                        pantalonRaffiImage,
+                        anneauRaffi2Image,
                         bottesRaffiImage,
                     ]} />
 
                     {/* Inscription section */}
                     <div className={styles.inscriptionsColumn}>
-                        <Inscription text="Airtight" variant="legendary" />
+                        <Inscription text="Bulwark" variant="legendary" />
                         <Inscription text="Toppler" variant="legendary" />
                         <Inscription text="Raider" variant="rare" />
                         <Inscription text="Rattling" variant="rare" />
@@ -73,10 +76,8 @@ export default function Commanders() {
                             <li><Sword size={30} color="#0a88df" /> Infantry Attack +7.2%</li>
                             <li><Sword size={30} color="#0a88df" /> Infantry Defense +4.9%</li>
                             <li><Sword size={30} color="#0a88df" /> Infantry Health 9.6%</li>
-                            <li><BowArrow size={30} color="#e44033" /> Archer Attack +2.6%</li>
+                            <li><Footprints size={30} color="#0a88df" /> March Speed +2.0%</li>
                             <li><BowArrow size={30} color="#e44033" /> Archer Defense +1.9%</li>
-                            <li><BowArrow size={30} color="#e44033" /> Archer March +2.8%</li>
-                            <li><Axe size={30} color="#d9b800" /> Barbarian Attack <span>+6.6%</span></li>
                         </ul>
                     </div>
                 </div>
