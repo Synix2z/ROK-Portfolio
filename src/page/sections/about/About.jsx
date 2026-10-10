@@ -78,7 +78,7 @@ export default function About() {
                         </p>
 
                         <p>
-                            Last update: 27/09/26 
+                            Last update : 10/10/26 
                         </p>
                     </div>
                 </div>
