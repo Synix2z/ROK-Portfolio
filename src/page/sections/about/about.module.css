@@ -16,7 +16,7 @@
 .aboutText {
     max-width: 800px;
     color: var(--color-text-primary);
-    font-family: var(--font-text-basic);
+    font-family: var(--font-text-primary);
     text-align: left;
     font-size: var(--font-size-text-primary);
     line-height: 1.5;

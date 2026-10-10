@@ -42,7 +42,7 @@
     padding: 0;
     margin: 0;
     color: var(--color-text-primary);
-    font-family: var(--font-text-basic);
+    font-family: var(--font-text-primary);
     font-size: var(--font-size-text-primary);
     margin-top: 40px;
 }
