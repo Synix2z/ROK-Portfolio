@@ -30,6 +30,6 @@ export const kvkRecords: KvKRecord[] = [
         startDate: "28 August 2026",
         endDate: "19 October 2026",
         image: "/images/War_Img.jpg",
-        stats: { killPoints: 47_553_673, deaths: 499_958, healingPoints: 82_600_000, merits: 2_836_272 },
+        stats: { killPoints: 47_553_673, deaths: 499_958, healingPoints: 20_486_734, merits: 2_836_272 },
     },
 ];
