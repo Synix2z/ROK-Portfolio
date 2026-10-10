@@ -14,6 +14,7 @@ The entire project is built using **React**, with a minimalist structure, smooth
 - Fully built with **React**  
 - Smooth scrolling navigation  
 - Custom color theme using CSS variables  
+- KD & KvK timeline with filter  
 - Minimalist and easy-to-maintain project structure  
 
 ---
@@ -27,6 +28,9 @@ src/
 │   │   ├── header/
 │   │   └── footer/
 │   │
+│   ├── title-section/
+│   ├── timeline-event/
+│   ├── timeline-filter/
 │   └── ...
 │
 ├── hooks/
@@ -43,5 +47,4 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── variable.css
-
 ```
