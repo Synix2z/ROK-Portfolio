@@ -13,20 +13,21 @@ import William_Wallace from "../../../images/commanders/William_Wallace.png";
 
 /* Stuff */
 import casqueImage from "../../../images/stuff/Casque.png";
+import casqueRaffiImage from "../../../images/stuff/Casque_Raffi.png";
 import capeImage from "../../../images/stuff/Cape.png";
 import capeRaffiImage from "../../../images/stuff/Cape_Raffi.png";
 import bouclierImage from "../../../images/stuff/Bouclier.png";
-import bouclierRaffiImage from "../../../images/stuff/Bouclier_Raffi_Retouche.png";     
+import bouclierRaffiImage from "../../../images/stuff/Bouclier_Raffi.png";     
 import gantImage from "../../../images/stuff/Gant.png";
 import pantalonImage from "../../../images/stuff/Pantalon.png";
-import pantalonRaffiImage from "../../../images/stuff/Pantalon_Raffi_Retouche.png";
+import pantalonRaffiImage from "../../../images/stuff/Pantalon_Raffi.png";
 import bottesImage from "../../../images/stuff/Bottes.png";
 import bottesRaffiImage from "../../../images/stuff/Bottes_Raffi.png";
 
 /* Jewellery gears */
 import grandeGloireImage from "../../../images/stuff/Grande_Gloire.png";
 import anneauRaffiImage from "../../../images/stuff/Anneau_Raffi.png";
-import anneauRaffi2Image from "../../../images/stuff/Anneau_Raffi2_Retouche.png";
+import anneauRaffi2Image from "../../../images/stuff/Anneau_Raffi2.png";
 import corneImage from "../../../images/stuff/Corne.png";
 import dagueImage from "../../../images/stuff/Dague.png";
 
@@ -52,7 +53,7 @@ export default function Commanders() {
 
                     {/* Commanders grid section */}
                     <CommandersGrid images={[
-                        casqueImage,
+                        casqueRaffiImage,
                         bouclierRaffiImage,
                         capeRaffiImage,
                         gantImage,
