@@ -31,10 +31,6 @@ import anneauRaffi2Image from "../../../images/stuff/Anneau_Raffi2.png";
 import corneImage from "../../../images/stuff/Corne.png";
 import dagueImage from "../../../images/stuff/Dague.png";
 
-import Archer_Stats from "../../../images/stats/Archer_Stats.png";
-import Barbarian_Stats from "../../../images/stats/Barbarian_Stats.png";
-import Inf_Stats from "../../../images/stats/Inf_Stats.png";
-
 import { Sword, BowArrow, Footprints } from "lucide-react";
 
 export default function Commanders() {
