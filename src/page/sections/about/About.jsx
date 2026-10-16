@@ -4,7 +4,26 @@ import Title from "../../../components/title-section/Title";
 import profileImage from "../../../images/profile.jpg";
 import { CircleAlert } from "lucide-react";
 
+// (YYYY-MM-DD)
+const START_DATE = new Date("2022-11-06");
+
+function getYearsSince(date) {
+    const now = new Date();
+
+    // Compute the difference in years
+    let years = now.getFullYear() - date.getFullYear();
+
+    // Check if the anniversary has passed this year and compare with day if the month is the same
+    const anniversaryPassed =
+        now.getMonth() > date.getMonth() ||
+        (now.getMonth() === date.getMonth() && now.getDate() >= date.getDate());
+    if (!anniversaryPassed) years--;
+    return years;
+}
+
 export default function About() {
+    const years = getYearsSince(START_DATE);
+
     return (
         <>
             <Title text="About" id="about-title" />
@@ -35,7 +54,7 @@ export default function About() {
                         <span style={{ color: "var(--color-text-secondary)" }}> Synix2z</span>.
                         I enjoy playing strategic video games, especially
                         <span style={{ color: "var(--color-text-secondary)" }}> Rise of Kingdoms</span>.
-                        I've been playing this game for 4 years now (since June 6, 2022).
+                        I've been playing this game for {years} {years > 1 ? "years" : "year"} now (since June 6, 2022).
                         <br />
                         I'm a French player and I play <span style={{ color: "var(--color-text-secondary)" }}> F2P</span>,
                         trying to do my best to optimize everything so I don't fall behind other players.
@@ -67,18 +86,18 @@ export default function About() {
                     </p>
 
                     <br />
-                    
+
                     <div className={styles.disclaimer}>
                         <div className={styles.disclaimerIcon}>
-                            <CircleAlert size={24} /> 
+                            <CircleAlert size={24} />
                         </div>
-                        
+
                         <p>
                             Some information, such as gear, equipment, or the number of resources and speed-ups, may not be up to date. So if you need anything, please ask me directly.
                         </p>
 
                         <p>
-                            Last update : 10/10/26 
+                            Last update : 10/10/26
                         </p>
                     </div>
                 </div>
