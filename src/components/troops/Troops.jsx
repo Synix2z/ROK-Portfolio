@@ -1,11 +1,11 @@
 import styles from "./troops.module.css";
 
 /* Images */
-import T1Belier from "../../images/troops/T1_Belier.png";
-import T4Archer from "../../images/troops/T4_Archer.png";
-import T4Cav from "../../images/troops/T4_Cav.png";
-import T4Inf from "../../images/troops/T4_Inf.png";
-import T5Inf from "../../images/troops/T5_Inf.png";
+import T1Belier from "../../images/troops/T1_Belier.webp";
+import T4Archer from "../../images/troops/T4_Archer.webp";
+import T4Cav from "../../images/troops/T4_Cav.webp";
+import T4Inf from "../../images/troops/T4_Inf.webp";
+import T5Inf from "../../images/troops/T5_Inf.webp";
 
 export default function Troops() {
     const troops = [
@@ -23,7 +23,9 @@ export default function Troops() {
             <div className={styles.troopsRow}>
                 {troops.map((t, i) => (
                     <div key={i} className={styles.troopItem}>
-                        <img src={t.img} alt="Troop" className={styles.troopImage} />
+                        <img src={t.img} alt="Troop" className={styles.troopImage} 
+                            loading="lazy"
+                            decoding="async" />
                         <div className={styles.troopCount}>{t.count}</div>
                     </div>
                 ))}

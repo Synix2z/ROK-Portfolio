@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import styles from "./header.module.css";
 
@@ -24,20 +23,23 @@ export default function Header() {
       <button
         className={styles.hamburger}
         onClick={() => setOpen(!open)}
+        aria-label={open ? "Close menu" : "Open menu"}
+        aria-expanded={open}
+        aria-controls="main-nav"
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
 
       {/* Navigation */}
-      <nav className={`${styles.nav} ${open ? styles.open : ""}`}>
+      <nav id="main-nav" className={`${styles.nav} ${open ? styles.open : ""}`}>
         <button onClick={() => scrollToSection("about-title")}>About</button>
         <button onClick={() => scrollToSection("commanders-title")}>Commanders</button>
         <button onClick={() => scrollToSection("current-objectives")}>Current Objectives</button>
         <button onClick={() => scrollToSection("statistics-title")}>Statistics</button>
         <button onClick={() => scrollToSection("timeline-title")}>KD & KvK Timeline</button>
-        
+
         <button onClick={() => navigate("/tools")}>Tools</button>
       </nav>
     </header>

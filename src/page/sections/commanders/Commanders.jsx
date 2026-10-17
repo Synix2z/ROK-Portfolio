@@ -6,30 +6,30 @@ import Inscription from "../../../components/inscription/Inscription";
 import Title from "../../../components/title-section/Title";
 
 /* Infantry commanders */
-import Bai_Qi from "../../../images/commanders/Bai_Qi.png";
-import Liu_Che from "../../../images/commanders/Liu_Che.png";
-import Sun_Zi_Prime from "../../../images/commanders/Sun_Zi_Prime.png";
-import William_Wallace from "../../../images/commanders/William_Wallace.png";
+import Bai_Qi from "../../../images/commanders/Bai_Qi.webp";
+import Liu_Che from "../../../images/commanders/Liu_Che.webp";
+import Sun_Zi_Prime from "../../../images/commanders/Sun_Zi_Prime.webp";
+import William_Wallace from "../../../images/commanders/William_Wallace.webp";
 
 /* Stuff */
-import casqueImage from "../../../images/stuff/Casque.png";
-import casqueRaffiImage from "../../../images/stuff/Casque_Raffi.png";
-import capeImage from "../../../images/stuff/Cape.png";
-import capeRaffiImage from "../../../images/stuff/Cape_Raffi.png";
-import bouclierImage from "../../../images/stuff/Bouclier.png";
-import bouclierRaffiImage from "../../../images/stuff/Bouclier_Raffi.png";     
-import gantImage from "../../../images/stuff/Gant.png";
-import pantalonImage from "../../../images/stuff/Pantalon.png";
-import pantalonRaffiImage from "../../../images/stuff/Pantalon_Raffi.png";
-import bottesImage from "../../../images/stuff/Bottes.png";
-import bottesRaffiImage from "../../../images/stuff/Bottes_Raffi.png";
+import casqueImage from "../../../images/stuff/Casque.webp";
+import casqueRaffiImage from "../../../images/stuff/Casque_Raffi.webp";
+import capeImage from "../../../images/stuff/Cape.webp";
+import capeRaffiImage from "../../../images/stuff/Cape_Raffi.webp";
+import bouclierImage from "../../../images/stuff/Bouclier.webp";
+import bouclierRaffiImage from "../../../images/stuff/Bouclier_Raffi.webp";     
+import gantImage from "../../../images/stuff/Gant.webp";
+import pantalonImage from "../../../images/stuff/Pantalon.webp";
+import pantalonRaffiImage from "../../../images/stuff/Pantalon_Raffi.webp";
+import bottesImage from "../../../images/stuff/Bottes.webp";
+import bottesRaffiImage from "../../../images/stuff/Bottes_Raffi.webp";
 
 /* Jewellery gears */
-import grandeGloireImage from "../../../images/stuff/Grande_Gloire.png";
-import anneauRaffiImage from "../../../images/stuff/Anneau_Raffi.png";
-import anneauRaffi2Image from "../../../images/stuff/Anneau_Raffi2.png";
-import corneImage from "../../../images/stuff/Corne.png";
-import dagueImage from "../../../images/stuff/Dague.png";
+import grandeGloireImage from "../../../images/stuff/Grande_Gloire.webp";
+import anneauRaffiImage from "../../../images/stuff/Anneau_Raffi.webp";
+import anneauRaffi2Image from "../../../images/stuff/Anneau_Raffi2.webp";
+import corneImage from "../../../images/stuff/Corne.webp";
+import dagueImage from "../../../images/stuff/Dague.webp";
 
 import { Sword, BowArrow, Footprints } from "lucide-react";
 
@@ -43,8 +43,8 @@ export default function Commanders() {
                 <div>
                     {/* Commanders header section */}
                     <div className={styles.commanderHeader}>
-                        <img src={Sun_Zi_Prime} alt="Sun Zi Prime" className={styles.commanderHeaderImage} />
-                        <img src={William_Wallace} alt="William Wallace" className={styles.commanderHeaderImage} />
+                        <img src={Sun_Zi_Prime} alt="Sun Zi Prime" className={styles.commanderHeaderImage} loading="lazy" decoding="async"/>
+                        <img src={William_Wallace} alt="William Wallace" className={styles.commanderHeaderImage} loading="lazy" decoding="async"/>
                     </div>
 
                     {/* Commanders grid section */}
@@ -83,8 +83,8 @@ export default function Commanders() {
                 <div>
                     {/* Commanders header section */}
                     <div className={styles.commanderHeader}>
-                        <img src={Bai_Qi} alt="Bai Qi" className={styles.commanderHeaderImage} />
-                        <img src={Liu_Che} alt="Liu Che" className={styles.commanderHeaderImage} />
+                        <img src={Bai_Qi} alt="Bai Qi" className={styles.commanderHeaderImage} loading="lazy" decoding="async"/>
+                        <img src={Liu_Che} alt="Liu Che" className={styles.commanderHeaderImage} loading="lazy" decoding="async"/>
                     </div>
 
                     {/* Commanders grid section */}
