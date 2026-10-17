@@ -53,7 +53,7 @@ export default function About() {
                         My name is Théo, but I'm mostly known as
                         <span style={{ color: "var(--color-text-secondary)" }}> Synix2z</span>.
                         I enjoy playing strategic video games, especially
-                        <span style={{ color: "var(--color-text-secondary)" }}> Rise of Kingdoms</span>.
+                        {" "}<a href="https://rok.lilith.com/" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-text-secondary)", textDecoration: "underline" }}>Rise of Kingdoms</a>.
                         I've been playing this game for {years} {years > 1 ? "years" : "year"} now (since June 6, 2022).
                         <br />
                         I'm a French player and I play <span style={{ color: "var(--color-text-secondary)" }}> F2P</span>,
