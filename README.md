@@ -9,6 +9,9 @@ The entire project is built using **React**, with a minimalist structure, smooth
 
 ---
 
+## 🌐 Access to the website
+The website is available online : **[synix2z-rok-profile.vercel.app](https://synix2z-rok-profile.vercel.app/)**
+
 ## 🏗️ Features
 - Clean and modern UI  
 - Fully built with **React**  
