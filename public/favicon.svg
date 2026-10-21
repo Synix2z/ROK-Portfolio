@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="letters" gradientUnits="userSpaceOnUse" x1="11" y1="0" x2="42" y2="0">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="#14111f"/>
+
+  <!-- laptop -->
+  <rect x="8" y="13" width="42" height="27" rx="3" fill="#2d2850"/>
+  <rect x="11" y="16" width="36" height="21" rx="1.5" fill="#0f2a3d"/>
+  <rect x="3" y="40" width="52" height="5" rx="2.5" fill="#8b7bd8"/>
+  <rect x="24" y="40" width="10" height="1.8" rx="0.9" fill="#5b4fa0"/>
+
+  <!-- S2z -->
+  <g transform="translate(2.5 -2)" fill="none" stroke="url(#letters)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.5 23.5C19 21.5 12.5 21 12.5 25.5C12.5 29.5 21 28.5 21 33C21 37 13.5 37 11.8 34.5"/>
+    <path d="M23.5 24C24.5 21 31 21 31 25C31 28.5 24 32 23 35.5H32.5"/>
+    <path d="M34.8 27H41L34.6 35.2H41.6"/>
+  </g>
+
+  <!-- épée -->
+  <g transform="translate(54 32) rotate(15) scale(0.85) translate(-32 -32)" stroke="#14111f" stroke-width="1.6" stroke-linejoin="round" paint-order="stroke">
+    <path d="M32 1L35 11V41H29V11Z" fill="#e2e8f0"/>
+    <rect x="21" y="41" width="22" height="4.5" rx="2" fill="#f59e0b"/>
+    <rect x="30" y="45.5" width="4" height="9" rx="1" fill="#92400e"/>
+    <circle cx="32" cy="57.5" r="3" fill="#f59e0b"/>
+  </g>
+</svg>
