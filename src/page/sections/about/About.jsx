@@ -5,7 +5,7 @@ import profileImage from "../../../images/profile.jpg";
 import { CircleAlert } from "lucide-react";
 
 // (YYYY-MM-DD)
-const START_DATE = new Date("2022-11-06");
+const START_DATE = new Date("2022-06-06");
 
 function getYearsSince(date) {
     const now = new Date();
