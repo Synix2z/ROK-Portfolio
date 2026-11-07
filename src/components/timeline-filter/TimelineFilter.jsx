@@ -17,15 +17,16 @@ export default function TimelineFilter({ value, onChange }) {
                 </div>
             </div>
 
-            <div className={styles.buttons}>
+            <div className={styles.buttons} role="group" aria-label="Filter the KvKs">
                 {OPTIONS.map(({ id, label, Icon }) => (
                     <button
                         key={id}
                         type="button"
+                        aria-pressed={value === id}
                         className={`${styles.button} ${value === id ? styles.active : ""}`}
                         onClick={() => onChange(id)}
                     >
-                        <Icon size={20} />
+                        <Icon size={20} aria-hidden="true" />
                         {label}
                     </button>
                 ))}

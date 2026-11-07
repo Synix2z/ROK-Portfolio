@@ -11,7 +11,7 @@ export default function Timeline() {
     const [filter, setFilter] = useState("stats");
 
     const records = kvkRecords.filter((r) => filter === "all" || r.stats);
-    console.log(kvkRecords[3]);
+
     return (
         <>
             <Title text="KD & KvK Timeline" id="timeline-title" />

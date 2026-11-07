@@ -1,6 +1,3 @@
-import { Link } from 'react-router-dom'
-import { useEffect } from "react";
-
 /* Components */
 import Separator from '../components/separator-section/Separator'
 import About from './sections/about/About'
@@ -9,14 +6,12 @@ import Statistics from './sections/statistics/Statistics'
 import FadeIn from '../components/fade-in/FadeIn'
 import Timeline from './sections/timeline/Timeline'
 import CurrentObjectives from './sections/current-objectives/CurrentObjectives'
-import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import styles from './mainPage.module.css'
 
 function MainPage() {
   return (
     <div className={styles.content}>
-      <SpeedInsights />
       <FadeIn delay={0}>
         <About />
       </FadeIn>
