@@ -1,35 +1,34 @@
 import { useEffect, useRef, useState } from "react";
 
 /* Detects when an element becomes visible in the viewport */
-export default function useInView(threshold = 0.1) {
-    // Reference to the DOM element we want to observe
+export default function useInView() {
     const ref = useRef(null);
-
-    // True when the element is visible on screen
     const [inView, setInView] = useState(false);
 
     useEffect(() => {
-        // Create the observer that watches visibility changes
+        const element = ref.current;
+        if (!element) return;
+
+        // Old browsers without IntersectionObserver: show the content directly
+        if (!("IntersectionObserver" in window)) {
+            setInView(true);
+            return;
+        }
+
         const observer = new IntersectionObserver(
             ([entry]) => {
-                // If the element is visible, update state
                 if (entry.isIntersecting) {
                     setInView(true);
-
-                    // Stop observing after the first trigger
                     observer.disconnect();
                 }
             },
-            { threshold } // Visibility percentage required to trigger
+            // Trigger as soon as the top of the element enters the screen
+            { threshold: 0, rootMargin: "0px 0px -50px 0px" }
         );
 
-        // Start observing the element when it's available
-        if (ref.current) observer.observe(ref.current);
-
-        // Cleanup when the component unmounts
+        observer.observe(element);
         return () => observer.disconnect();
-    }, [threshold]);
+    }, []);
 
-    // Return the ref to attach + the visibility state
     return [ref, inView];
 }
