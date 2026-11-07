@@ -1,4 +1,5 @@
 :root {
+    color-scheme: dark;
     --color-primary: #161D2F;
     --color-background: #1D2335;
 
@@ -35,6 +36,7 @@ html {
 
 body {
     background-color: var(--color-background);
+    color: var(--color-text-primary);
     padding-top: 100px;
 }
 
